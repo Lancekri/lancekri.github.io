@@ -1,0 +1,38 @@
+.back{
+    background-color: red;
+    width: 100%;
+    text-align: center;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+}
+
+
+.characters {
+    position: absolute;
+    z-index: 2;
+    height: 150px;
+    left: 900px;
+    bottom: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+}
+
+.characters:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.background {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: auto;
+}
+
+.img-container{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
